@@ -12,11 +12,8 @@
     "test": "jest"
   },
   "lint-staged": {
-      "*.js": [
-          "eslint --fix && npm pretty",
-          "git add"
-      ]
-  },
+    "*.js": "eslint --fix && npm run pretty"
+   },
   "author": "Lenny Peters",
   "license": "ISC",
   "devDependencies": {
@@ -42,6 +39,7 @@
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.12.1",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
