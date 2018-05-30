@@ -6,19 +6,19 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "pretty": "eslint --fix && ./node_modules/.bin/prettier \"src/**/*.js\"",
+    "pretty": "prettier-eslint \"src/**/*.js\"",
     "precommit": "lint-staged && npm test",
     "clean": "rm -rf dist",
     "test": "jest"
   },
   "lint-staged": {
     "*.js": "npm run pretty"
-   },
+  },
   "husky": {
-    "hooks":{
-      "pre-commit":"npm run precommit"
+    "hooks": {
+      "pre-commit": "npm run precommit"
     }
-  }, 
+  },
   "author": "Lenny Peters",
   "license": "ISC",
   "devDependencies": {
@@ -46,6 +46,7 @@
     "postcss-loader": "^2.1.5",
     "pre-commit": "^1.2.2",
     "prettier": "^1.12.1",
+    "prettier-eslint-cli": "^4.7.1",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "webpack": "^4.8.3",
