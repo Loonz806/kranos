@@ -6,13 +6,13 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "pretty": "prettier \"src/**/*.js\"",
+    "pretty": "eslint --fix && ./node_modules/.bin/prettier \"src/**/*.js\"",
     "precommit": "lint-staged && npm test",
     "clean": "rm -rf dist",
     "test": "jest"
   },
   "lint-staged": {
-    "*.js": "eslint --fix && npm run pretty"
+    "*.js": "npm run pretty"
    },
   "author": "Lenny Peters",
   "license": "ISC",
