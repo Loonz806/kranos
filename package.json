@@ -13,7 +13,7 @@
   },
   "lint-staged": {
       "*.js": [
-          "npm run pretty",
+          "eslint --fix && npm pretty",
           "git add"
       ]
   },
