@@ -1,0 +1,19 @@
+// Globale Styles
+
+@import './scss/normalize.scss';
+@import './scss/variables.scss';
+@import './scss/mixins.scss';
+@import './scss/typography.scss';
+@import './scss/forms.scss';
+
+// Container Styles
+
+body {
+    color: $primaryColor;
+    display: flex;
+    div {
+        flex: 1;
+    }
+}
+
+// Component Styles
