@@ -14,6 +14,11 @@
   "lint-staged": {
     "*.js": "npm run pretty"
    },
+  "husky": {
+    "hooks":{
+      "pre-commit":"npm run precommit"
+    }
+  }, 
   "author": "Lenny Peters",
   "license": "ISC",
   "devDependencies": {
