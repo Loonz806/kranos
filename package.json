@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "pretty": "prettier --write \"src/**/*.js\"",
+    "pretty": "prettier --write --tab-width 4 \"src/**/*.js\"",
     "precommit": "lint-staged && npm test",
     "clean": "rm -rf dist",
     "test": "jest"
