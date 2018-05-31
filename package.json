@@ -6,13 +6,12 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "pretty": "prettier-eslint \"src/**/*.js\"",
     "precommit": "lint-staged && npm test",
     "clean": "rm -rf dist",
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "lint-staged": {
-    "*.js": "npm run pretty"
+    "*.js": "prettier-eslint \"src/**/*.js\""
   },
   "husky": {
     "hooks": {
