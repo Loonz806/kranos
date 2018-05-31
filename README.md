@@ -1,3 +1,9 @@
+[![Build Status](https://travis-ci.org/Loonz806/kranos.svg?branch=master)](https://travis-ci.org/Loonz806/kranos)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+  <a href="#badge">
+    <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
+  </a>
+
 # Kranos
 
 Kranos is a beginning of using Webpack 4 with React without using the 
