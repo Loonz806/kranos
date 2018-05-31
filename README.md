@@ -27,10 +27,10 @@ Some reading
 ----
 
 #### Why NPM instead of YARN?
-_Personally doesn't matter as long as you use one package manager and only one. Dependacies can get awful during updates when you have more than one package manager. I chose NPM because it has made great strides in keeping open source community engadged. And was pushed to improve with YARN on the block_
+_Personally doesn't matter as long as you use one package manager and only one. Dependacies can get awful during updates when you have more than one package manager. I chose NPM because it has made great strides in keeping open source community engadged. And was pushed to improve with the new kid YARN on the block_
 
 ### Why use Airbnb instead of (insert styleguide/creating own)?
-_Well documented, explains every reasoning behind rule set from React perspective and tired of recreating the wheel and [bikeshedding](https://en.wikipedia.org/wiki/Law_of_triviality) arguements. We should just code and let the machine do the formatting for us._
+_Well documented, explains every reasoning behind rule set from React perspective and tired of recreating the wheel and [bikeshedding](https://en.wikipedia.org/wiki/Law_of_triviality) arguments. We should just code and let the machine do the formatting for us._
 
 ### Why Travis CI?
 _Incredibly easy to integrate with public coding using Github. Very well could use Jenkins to do the same but with less than a couple hours using Travis CI and can leverage multiple directions after CI for FED code_
@@ -59,6 +59,28 @@ npm run build
 To commit code use command
 ```
 git cz
+```
+_I removed the forced JIRA ticket reference for Commitizen until a JIRA project becomes nessary. If that is the case you can add these lines into the package.json file_
+
+```
+"validate-commit-msg": {
+  "types": [
+    "feat",
+    "fix",
+    "docs",
+    "style",
+    "refactor",
+    "perf",
+    "test",
+    "chore",
+    "revert"
+  ],
+  "warnOnFail": false,
+  "maxSubjectLength": 100,
+  "subjectPattern": "^[A-Z]+-[0-9]+ - .*",
+  "subjectPatternErrorMsg": "Subject must be in format 'CMS-123 - Commit message'",
+  "helpMessage": ""
+}
 ```
 
 Things for the future 
