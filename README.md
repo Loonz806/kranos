@@ -8,9 +8,9 @@ Kranos is hard. Kranos sucks and now I know why people would rather just use Cre
 You will need.. 
 * A computer (MacOS, Linux or Windows)
 * Terminal or Git Bash for Windows
-* [Node.js](https://www.nodejs.org)
+* [Node.js](https://www.nodejs.org), LTS version preferred
 * [GIT](https://git-scm.com/)
-* IDE or Text Editor (VS Code, WebStorm, Sublime Text, Notepad)
+* IDE or Text Editor (VS Code, WebStorm, Sublime Text, Notepad...etc)
 
 Some helpful plugins for the text-editor 
 * [EditorConfig](https://editorconfig.org/)
@@ -24,17 +24,22 @@ Some reading
 * [Travis CI](https://travis-ci.org/)
 
 ## Questions 
+----
 
 #### Why NPM instead of YARN?
-_personally doesn't matter as long as you use one package manager and only one. Dependacies can get awful during updates when you have more than one package manager. I chose NPM because it has made great strides in keeping open source community engadged. And was pushed to improve with YARN on the block_
+_Personally doesn't matter as long as you use one package manager and only one. Dependacies can get awful during updates when you have more than one package manager. I chose NPM because it has made great strides in keeping open source community engadged. And was pushed to improve with YARN on the block_
 
-### Why use Airbnb instead of (insert styleguide)
-_well documented, explains every reasoning behind rule set from React perspective and tired of recreating the wheel and barnshedding arguements. We should just code and let the machine do the formatting for us._
+### Why use Airbnb instead of (insert styleguide/creating own)?
+_Well documented, explains every reasoning behind rule set from React perspective and tired of recreating the wheel and [bikeshedding](https://en.wikipedia.org/wiki/Law_of_triviality) arguements. We should just code and let the machine do the formatting for us._
 
-### Why Travis CI
-_Incredibly easy to integrate with public coding using Github. Very well could use Jenkins to do the same but with less than a couple hours using Travis CI_
+### Why Travis CI?
+_Incredibly easy to integrate with public coding using Github. Very well could use Jenkins to do the same but with less than a couple hours using Travis CI and can leverage multiple directions after CI for FED code_
 
 To get started, clone the project and run
+```
+npm install -g commitizen
+```
+then
 ```
 npm install
 ```
@@ -49,6 +54,11 @@ npm run test
 To build production code
 ```
 npm run build
+```
+
+To commit code use command
+```
+git cz
 ```
 
 Things for the future 

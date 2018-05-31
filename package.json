@@ -10,10 +10,14 @@
     "test": "jest",
     "testWatch": "jest --watchAll",
     "lint": "eslint src",
-    "precommit": "lint-staged && npm test"
+    "precommit": "lint-staged && npm test",
+    "commitmsg": "validate-commit-msg"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css,md}": ["eslint --fix src", "git add"]
+    "src/**/*.{js,jsx,json,css,md}": [
+      "eslint --fix src",
+      "git add"
+    ]
   },
   "author": "Lenny Peters",
   "license": "ISC",
@@ -24,7 +28,9 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
+    "commitizen": "^2.10.1",
     "css-loader": "^0.28.11",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -43,6 +49,7 @@
     "prettier-eslint-cli": "^4.7.1",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
+    "validate-commit-msg": "^2.14.0",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4"
@@ -51,5 +58,28 @@
     "autoprefixer": "^8.5.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": "^[A-Z]+-[0-9]+ - .*",
+      "subjectPatternErrorMsg": "Subject must be in format 'CMS-123 - Commit message'",
+      "helpMessage": ""
+    }
   }
 }
