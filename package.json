@@ -12,7 +12,7 @@
     "testWatch": "jest --watchAll"
   },
   "lint-staged": {
-    "*.js": "prettier-eslint \"src/**/*.js\""
+    "*.js": "prettier-eslint --write \"src/**/*.js\""
   },
   "husky": {
     "hooks": {
