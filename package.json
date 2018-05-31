@@ -8,14 +8,16 @@
     "build": "webpack --mode production",
     "precommit": "lint-staged && npm test",
     "clean": "rm -rf dist",
-    "test": "jest --watchAll"
+    "test": "jest",
+    "testWatch": "jest --watchAll"
   },
   "lint-staged": {
     "*.js": "prettier-eslint \"src/**/*.js\""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit"
+      "pre-commit": "npm run precommit",
+      "pre-staged": "npm run precommit"
     }
   },
   "author": "Lenny Peters",
