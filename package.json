@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "precommit": "lint-staged",
+    "precommit": "prettier-eslint --write \"src/**/*.js\"",
     "clean": "rm -rf dist",
     "test": "jest",
     "testWatch": "jest --watchAll"
