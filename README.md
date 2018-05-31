@@ -7,7 +7,7 @@ Kranos is hard. Kranos sucks and now I know why people would rather just use Cre
 
 You will need.. 
 * A computer (MacOS, Linux or Windows)
-* Terminal or Git Bash for Windows
+* Terminal or [Git Bash](https://gitforwindows.org/) for Windows
 * [Node.js](https://www.nodejs.org), LTS version preferred
 * [GIT](https://git-scm.com/)
 * IDE or Text Editor (VS Code, WebStorm, Sublime Text, Notepad...etc)
