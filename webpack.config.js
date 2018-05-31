@@ -37,19 +37,37 @@ module.exports = {
         use: [
           'style-loader',
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              sourceMap: true,
+            },
+          },
           {
             loader: 'postcss-loader',
             options: {
               autoprefixer: {
-                browsers: ['last 2 versions', 'iOS >= 8'],
+                browsers: [
+                  '>1%',
+                  'last 4 versions',
+                  'Firefox ESR',
+                  'not ie < 9',
+                ],
+                flexbox: 'no-2009',
               },
               plugins: () => [
                 autoprefixer,
               ],
             },
           },
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              importLoaders: 1,
+              sourceMap: true,
+            },
+          },
         ],
       },
     ],
