@@ -6,19 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "precommit": "prettier-eslint --write \"src/**/*.js\"",
     "clean": "rm -rf dist",
     "test": "jest",
     "testWatch": "jest --watchAll"
-  },
-  "lint-staged": {
-    "*.js": "prettier-eslint --write \"src/**/*.js\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm precommit",
-      "pre-push": "npm precommit"
-    }
   },
   "author": "Lenny Peters",
   "license": "ISC",
