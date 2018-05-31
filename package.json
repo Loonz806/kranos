@@ -16,8 +16,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit",
-      "pre-staged": "npm run precommit"
+      "pre-commit": "npm precommit",
+      "pre-push": "npm precommit"
     }
   },
   "author": "Lenny Peters",
