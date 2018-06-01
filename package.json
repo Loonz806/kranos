@@ -7,11 +7,12 @@
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "clean": "rm -rf dist",
-    "test": "jest",
+    "test": "jest src",
     "testWatch": "jest --watchAll",
     "lint": "eslint src",
     "precommit": "lint-staged && npm test",
-    "commitmsg": "validate-commit-msg"
+    "commitmsg": "validate-commit-msg",
+    "cypress": "cypress open"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css,md}": [
@@ -30,6 +31,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "commitizen": "^2.10.1",
     "css-loader": "^0.28.11",
+    "cypress": "^3.0.1",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",

@@ -8,11 +8,11 @@
 
 // Container Styles
 
-body {
-    color: $primaryColor;
-    display: flex;
-    div {
-        flex: 1;
+.app-container {
+    width: 94%;
+    margin: 20px auto;
+    h1 {
+        color: $primaryColor;
     }
 }
 
