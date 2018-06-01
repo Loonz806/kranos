@@ -36,7 +36,7 @@ Some reading
 _Personally doesn't matter as long as you use one package manager and only one. Dependacies can get awful during updates when you have more than one package manager. I chose NPM because it has made great strides in keeping open source community engadged. And was pushed to improve with the new kid YARN on the block_
 
 ### Why use Airbnb instead of (insert styleguide/creating own)?
-_Well documented, explains every reasoning behind rule set from React perspective and tired of recreating the wheel and [bikeshedding](https://en.wikipedia.org/wiki/Law_of_triviality) arguments. We should just code and let the machine do the formatting for us._
+_Well documented, explains every reasoning behind rule set from React perspective and I grew tired of recreating the wheel and [bikeshedding](https://en.wikipedia.org/wiki/Law_of_triviality) discussions. We should just code and let the machine do the formatting for us. Combined with Prettier it becomes easy to just jump in_
 
 ### Why Travis CI?
 _Incredibly easy to integrate with public coding using Github. Very well could use Jenkins to do the same but with less than a couple hours using Travis CI and can leverage multiple directions after CI for FED code_
