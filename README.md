@@ -66,7 +66,7 @@ To commit code use command
 ```
 git cz
 ```
-_I removed the forced JIRA ticket reference for Commitizen until a JIRA project becomes nessary. If that is the case you can add these lines into the package.json file_
+_I removed the forced JIRA ticket reference for Commitizen until a JIRA project becomes necessary. If that is the case you can add these lines into the package.json file_
 
 ```
 "validate-commit-msg": {
