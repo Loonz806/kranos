@@ -93,3 +93,7 @@ Things for the future
 * integrating e2e testing framework that is cross browser
 * react dependacies like routing/state manager
 
+## Resources
+
+* [e2e Testing with Protractor for nonangular using ES6](https://medium.com/@marcelmokos/end-to-end-testing-with-protractor-using-modern-javascript-syntax-44e5121c2e03)
+* [Protractor Starter](https://github.com/marcelmokos/protractor-starter)
