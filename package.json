@@ -11,7 +11,9 @@
     "testWatch": "jest --watchAll",
     "lint": "eslint src",
     "precommit": "lint-staged && npm test",
-    "commitmsg": "validate-commit-msg"
+    "commitmsg": "validate-commit-msg",
+    "test-e2e": "protractor protractor.config.js",
+    "selenium": "webdriver-manager update && webdriver-manager start"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css,md}": [
@@ -37,6 +39,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-protractor": "^1.40.0",
     "eslint-plugin-react": "^7.8.2",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
@@ -47,6 +50,7 @@
     "postcss-loader": "^2.1.5",
     "prettier": "^1.12.1",
     "prettier-eslint-cli": "^4.7.1",
+    "protractor": "^5.3.2",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "validate-commit-msg": "^2.14.0",
