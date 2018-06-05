@@ -1,5 +1,3 @@
-const cy = require("cypress");
-
 describe("Form test", () => {
   beforeEach(() => {
     cy.visit("/");
