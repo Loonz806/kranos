@@ -97,3 +97,20 @@ Things for the future
 
 * [e2e Testing with Protractor for nonangular using ES6](https://medium.com/@marcelmokos/end-to-end-testing-with-protractor-using-modern-javascript-syntax-44e5121c2e03)
 * [Protractor Starter](https://github.com/marcelmokos/protractor-starter)
+
+### Protractor Setup
+
+Two things need to happen for Protractor to run e2e Tests
+```
+npm run selenium
+```
+_this starts a webdriver instance using Selenium (protractor is a wrapper around selenium) and of course you can add drivers for many drivers yourself or create suites of tests per driver_
+then in another terminal 
+```
+npm run test-e2e
+```
+_I have added instanbul for line coverage reporting for IDE's to show what lines are covered via those reporters_
+
+PROS: Already established e2e testing framework for Angular and can bypass waitForAngular function by changing config file. Simple describe, it, expect test writing pattern already known in Unit testing but using selectors and pageobject pattern. Has integration for Saucelabs as well.
+
+CONS: Angular testing framework for React project. Not a real con but kinda funny if you think about it. Frameworks have strong opinions of toolsets, libraries do not. So it's pick your poison.
