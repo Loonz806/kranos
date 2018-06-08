@@ -105,6 +105,6 @@ npm run cypress
 ```
 _a graphical UI will startup and show a suite of tests_
 
-PROS: Simple to get started, uses a basic selector method and helpful GUI to find and add elements for selectors to assert tests.
+PROS: Simple to get started, uses a basic selector method and helpful GUI to find and add elements for selectors to assert tests. No need to install webdrivers, just works using installed browsers. Unknown support for Saucelabs.
 
 CONS: Chrome only support which is less than desired
