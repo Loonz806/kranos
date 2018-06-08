@@ -93,3 +93,10 @@ Things for the future
 * integrating e2e testing framework that is cross browser
 * react dependacies like routing/state manager
 
+### Nightwatch JS - VueJS's e2e favorite
+
+Another wrapper around Selenium however syntax looks loads different. API is very robust. Loads of configs you need to setup yourself instead of using a CLI starter. Driver management for many types need to be downloaded individually. 
+
+PROS: Selenium, Saucelabs support, they throw the responsibilty to integrating with Travis CI to Travis CI documentation. Has beforeEach and AfterEach hooks.
+
+CONS: Another creation of an already standard e2e tool like Selenium. Cute owl however. Loads of setTimeout functions which is kinda gross. 
