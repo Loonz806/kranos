@@ -93,3 +93,18 @@ Things for the future
 * integrating e2e testing framework that is cross browser
 * react dependacies like routing/state manager
 
+### Cypress Setup
+
+You will need to run two commands to run Cypress to run e2e Testing
+```
+npm run start
+``` 
+_to begin the application at 0.0.0.0:3000 and then to run_
+```
+npm run cypress
+```
+_a graphical UI will startup and show a suite of tests_
+
+PROS: Simple to get started, uses a basic selector method and helpful GUI to find and add elements for selectors to assert tests.
+
+CONS: Chrome only support which is less than desired
