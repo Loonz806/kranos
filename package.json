@@ -11,7 +11,9 @@
     "testWatch": "jest --watchAll",
     "lint": "eslint src",
     "precommit": "lint-staged && npm test",
-    "commitmsg": "validate-commit-msg"
+    "commitmsg": "validate-commit-msg",
+    "selenium": "webdriver-manager update && webdriver-manager start",
+    "webdriverio": "node webdrivertest.js"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css,md}": [
@@ -50,6 +52,7 @@
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "validate-commit-msg": "^2.14.0",
+    "webdriver-manager": "^12.0.6",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4"
@@ -57,7 +60,8 @@
   "dependencies": {
     "autoprefixer": "^8.5.1",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "webdriverio": "^4.12.0"
   },
   "config": {
     "commitizen": {

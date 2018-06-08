@@ -93,3 +93,23 @@ Things for the future
 * integrating e2e testing framework that is cross browser
 * react dependacies like routing/state manager
 
+### WebdriverIO Setup 
+
+Another selenium based wrapper, webdriverio has a few dependacies. Namely installing webdrivers locally with something like webdriver-manager. Then writing tests similarly to most of the other languages.
+
+```
+npm run selenium
+```
+_this will run in an terminal then you will need to start another terminal and run the other command_
+```
+npm run webdriverio
+```
+_which is pointed to a example test checking google using the firefox browser_
+
+PROS: Simple to get started, again installing locally is nice and using npm scripts instead of polluting the global space. Support for Saucelabs out of the bag. Open sourced again. Selector is similar to jQuery/Sizzle. Might be helpful to create a helpers library to integrate common selected elements or what have you.
+
+CONS: How many of this libraries exist out there... Incredible. So many things that do the same thing over and over again. To set the config up you can use
+```
+./node_modules/.bin/webdriverio config
+```
+_and follow prompts to get all setup in whatever flavor you want, Jasmine, Mocha, reporters_
