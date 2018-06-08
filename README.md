@@ -93,3 +93,20 @@ Things for the future
 * integrating e2e testing framework that is cross browser
 * react dependacies like routing/state manager
 
+### TestCafe Setup
+
+A tool that doesn't need Selenium but can use SauceLabs. So one less driver manager to manage locally or globally. Uses node and the default browsers installed on machine but a Selenium address can be passed aka for something like Saucelabs, and Travis CI
+
+```
+npm run start
+```
+_tests locally_
+```
+npm run testcafe
+```
+
+PROS: Saucelabs, Travis CI and Jenkins docs and support. Simple install, no managing drivers or anything like that uses the native tools on the computer which is nice. Open Source. MIT license.
+
+CONS: Syntax looks different than most used testing frameworks like Chai,Sinon, Jasmine but API looks pretty easy to use. Still would need to review wait, promise, state management for testing.
+
+
