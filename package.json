@@ -13,7 +13,7 @@
     "precommit": "lint-staged && npm test",
     "commitmsg": "validate-commit-msg",
     "test-e2e": "nyc protractor protractor.config.js",
-    "testcafe": "testcafe \"saucelabs:Chrome@beta:Windows 10\" test1.js",
+    "testcafe": "testcafe \"saucelabs:Chrome\" test1.js",
     "selenium": "webdriver-manager update && webdriver-manager start"
   },
   "lint-staged": {
