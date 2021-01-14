@@ -55,7 +55,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "autoprefixer": "^8.5.1",
+    "autoprefixer": "^8.6.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
